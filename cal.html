@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=">
+	<title>ALY_CALCULCULATOR</title>
+	<style>
+		*{
+			background-color: darkkhaki;
+		}
+		 #clear{
+			width: 520px;
+			background-color: darkgreen;
+		}
+		
+		.formstyle{
+			position: absolute;
+			top: 10%;
+			left:30%;
+			
+			display: flex;
+			
+		}
+		#answer{
+			width: 510px;
+			background-color: cornsilk;
+		}
+		input {
+			background-color: blue;
+			height: 80px;
+			width: 170px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="formstyle">
+	<form name="form">
+		<input type="text" name="answer" id="answer"> <br>
+		<input type="button" value="1" onclick="form.answer.value+='1'" >
+		<input type="button" value="2" onclick="form.answer.value+='2'" >
+		<input type="button"  value="3" onclick="form.answer.value+='3'" ><br>
+		<input type="button" value="4" onclick="form.answer.value+='4'" id="button">
+		<input type="button" value="5" onclick="form.answer.value+='5'" id="button">
+		<input type="button" value="6" onclick="form.answer.value+='6'" id="button"><br>
+		<input type="button" value="7" onclick="form.answer.value+='7'" id="button">
+		<input type="button" value="8" onclick="form.answer.value+='8'" id="button">
+		<input type="button" value="9" onclick="form.answer.value+='9'" id="button"><br>
+		<input type="button" value="+" onclick="form.answer.value+='+'">
+		<input type="button" value="-" onclick="form.answer.value+='-'">
+		<input type="button" value="x" onclick="form.answer.value+='*'" ><br>
+		<input type="button" value="/" onclick="form.answer.value+='/'">
+		<input type="button" value="0" onclick="form.answer.value+='0'">
+		<input type="button" value="=" onclick="form.answer.value=eval(form.answer.value)"><br>
+		<input type="button" value="CLEAR ALL" onclick="form.answer.value=' '" id="clear">
+
+	</form>
+
+	</div>
+</body>
+</html> 
